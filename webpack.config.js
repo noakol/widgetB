@@ -25,7 +25,7 @@ module.exports = {
       include: resolve(__dirname, 'src'),
       loader: 'babel-loader',
       options: {
-        presets: ['env', 'react']
+        presets: [['env', { modules: false }], 'react']
       }
     }]
   },
