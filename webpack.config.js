@@ -8,7 +8,7 @@ module.exports = {
     lib: ['./']
   },
 
-  externals: Object.keys(pkg.dependencies),
+  externals: Object.keys(pkg.peerDependencies),
 
   output: {
     path: resolve(__dirname, 'dist'),
