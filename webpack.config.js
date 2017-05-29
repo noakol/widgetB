@@ -5,10 +5,8 @@ const pkg = require('./package.json');
 
 module.exports = {
   entry: {
-    lib: ['./']
+      widgetB: ['./']
   },
-
-  externals: Object.keys(pkg.dependencies),
 
   output: {
     path: resolve(__dirname, 'dist'),

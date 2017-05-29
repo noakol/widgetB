@@ -2,11 +2,16 @@
   "name": "widgetB",
   "version": "1.1.0",
   "description": "",
-  "main": "./dist/lib.js",
-  "module": "./src",
+  "main": "./dist/widgetB.js",
+  "module": "./lib",
+  "jsnext:main": "./lib",
+  "jsnext:amdocs:widgets": "./lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "clean": "rm -fdr dist && rm -fdr lib",
+    "build:es6": "babel src/ --out-dir lib/ --presets=react",
+    "dist": "webpack",
+    "build": "npm run clean && npm run build:es6 && npm run dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,7 @@
   },
   "homepage": "https://github.com/aviraminy/widgetB#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.1",
