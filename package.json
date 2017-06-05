@@ -5,13 +5,13 @@
   "main": "./dist/widgetB.js",
   "module": "./lib",
   "jsnext:main": "./lib",
-  "jsnext:amdocs:widgets": "./lib",
+  "jsnext:amdocs": "./lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -fdr dist && rm -fdr lib",
     "build:es6": "babel src/ --out-dir lib/ --presets=react",
-    "dist": "webpack",
-    "build": "npm run clean && npm run build:es6 && npm run dist"
+    "build:es5": "webpack",
+    "build": "npm run clean && npm run build:es6 && npm run build:es5"
   },
   "repository": {
     "type": "git",
