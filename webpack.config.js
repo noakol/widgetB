@@ -7,7 +7,7 @@ module.exports = {
   entry: {
       widgetB: ['./']
   },
-
+  externals: Object.keys(pkg.dependencies),
   output: {
     path: resolve(__dirname, 'dist'),
     filename: '[name].js',
