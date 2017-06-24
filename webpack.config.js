@@ -19,7 +19,7 @@ module.exports = {
 
   module: {
     rules: [{
-      test: /.jsx?$/,
+      test: /.js|.jsx?$/,
       include: resolve(__dirname, 'src'),
       loader: 'babel-loader',
       options: {

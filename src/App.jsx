@@ -1,5 +1,5 @@
 import React from 'react';
-import _ from 'lodash';
+import { fs } from 'lodash/fs';
 
 function App() {
   return <div><h1>Hello I'm widgetB</h1></div>

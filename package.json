@@ -1,6 +1,6 @@
 {
   "name": "widgetB",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/widgetB.js",
   "module": "./lib",
@@ -35,7 +35,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "mobx": "^3.1.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   }
