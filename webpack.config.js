@@ -1,5 +1,7 @@
 const { resolve } = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
 
 const pkg = require('./package.json');
 
@@ -33,6 +35,7 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlPlugin()
+    new HtmlPlugin(),
+    new BundleAnalyzerPlugin()
   ]
 };
