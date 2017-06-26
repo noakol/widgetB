@@ -4,9 +4,11 @@
   "description": "",
   "main": "./dist/widgetB.js",
   "module": "./lib",
-  "jsnext:main": "./lib",
+  "jsnext:ext": "./lib/widgetB.js",
   "jsnext:amdocs": "./lib",
   "scripts": {
+    "dev": "webpack",
+    "build:ext": "webpack --config webpack.config.externals.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -fdr dist && rm -fdr lib",
     "build:es6": "babel src/ --out-dir lib/ --presets=react",
@@ -37,6 +39,7 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "widgetC": "file:../widgetC"
   }
 }

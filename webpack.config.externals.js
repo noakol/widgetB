@@ -10,9 +10,9 @@ module.exports = {
   entry: {
       widgetB: ['./']
   },
-  // externals: Object.keys(pkg.dependencies),
+  externals: Object.keys(pkg.dependencies),
   output: {
-    path: resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'lib'),
     filename: '[name].js',
     library: 'widgetB',
     libraryTarget: 'umd'
